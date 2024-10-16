@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loja de Jogos</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+</head>
+<body>
+
+  <header>
+    <nav>
+      <div class="logo">GameStore</div>
+      <ul class="nav-links">
+        <li><a href="home.html">Início</a></li>
+        <li><a href="catalog.html">Jogos</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="cart.html">Carrinho</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <div class="carousel-container">
+    <div class="carousel">
+      <div class="carousel-item">
+        <img src="img/Destaques.jpg" alt="Jogo 1">
+        <h3>Jogo 1</h3>
+      </div>
+      <div class="carousel-item">
+        <img src="img/final.jpg" alt="Jogo 2">
+        <h3>Jogo 2</h3>
+      </div>
+      <div class="carousel-item">
+        <img src="img/pxn.jpg" alt="Jogo 3">
+        <h3>Jogo 3</h3>
+      </div>
+    </div>
+  </div>   
+
+  <div class="section-container">
+    <div class="game-section neon-button playstation">
+      <i class="bi bi-playstation"></i>
+      <h3>Jogos Populares - PlayStation</h3>
+    </div>
+    <div class="game-section neon-button xbox">
+      <i class="bi bi-xbox"></i>
+      <h3>Jogos Populares - Xbox</h3>
+    </div>
+    <div class="game-section neon-button nintendo">
+      <i class="bi bi-nintendo-switch"></i>
+      <h3>Jogos Populares - Nintendo</h3>
+    </div>
+  </div>
+
+  <div class="card-container">
+    <div class="card" onclick="window.location.href='jogos.html'">
+      <h3>Jogos Populares</h3>
+      <p>Veja os jogos mais jogados do momento.</p>
+    </div>
+  
+    <div class="card" onclick="window.location.href='categorias.html'">
+      <h3>Categorias</h3>
+      <p>Explore por gêneros e estilos de jogos.</p>
+    </div>
+  
+    <div class="card" onclick="window.location.href='promocoes.html'">
+      <h3>Promoções</h3>
+      <p>Aproveite as melhores ofertas!
+        _
+      </p>
+    </div>
+  
+    <div class="card" onclick="window.location.href='novidades.html'">
+      <h3>Novidades</h3>
+      <p>Fique por dentro dos lançamentos mais recentes.</p>
+    </div>
+  </div>
+  
+</body>
+
+<script src="js/script.js"></script>
+</html>

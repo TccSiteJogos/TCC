@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo de Jogos</title>
+  <link rel="stylesheet" href="css/styles.css">
+  <script src="js/cart.js" defer></script> <!-- Inclui o JavaScript para manipulação do carrinho -->
+  <style>
+    /* Estilos para a grid */
+    .games-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(220px, 1fr)); /* Aumentando o tamanho dos quadrados */
+      gap: 30px;
+      padding: 30px;
+    }
+
+    /* Estilos para os cartões de jogos */
+    .game-card {
+      background-color: #000000;
+      border-radius: 15px; /* Arredondamento leve */
+      overflow: hidden; /* Garante que a imagem siga a borda arredondada */
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .game-card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Deixa o cartão clicável para ir aos detalhes do jogo */
+    .game-card a {
+      display: block;
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .game-card img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover; /* Ajusta a imagem para cobrir o quadrado */
+    }
+
+    /* Cores para as bordas */
+    .game-card.ps {
+      border: 2px solid blue;
+    }
+
+    .game-card.ps:hover {
+      box-shadow: 0 0 15px 7px rgba(0, 0, 255, 0.7); /* Brilho azul ao passar o mouse */
+    }
+
+    .game-card.xbox {
+      border: 2px solid green;
+    }
+
+    .game-card.xbox:hover {
+      box-shadow: 0 0 15px 7px rgba(0, 255, 0, 0.7); /* Brilho verde ao passar o mouse */
+    }
+
+    .game-card.nintendo {
+      border: 2px solid red;
+    }
+
+    .game-card.nintendo:hover {
+      box-shadow: 0 0 15px 7px rgba(255, 0, 0, 0.7); /* Brilho vermelho ao passar o mouse */
+    }
+
+    /* Estilo adicional para a responsividade */
+    @media (max-width: 768px) {
+      .games-grid {
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr)); /* Ajusta o tamanho dos quadrados em telas menores */
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">GameStore</div>
+      <ul class="nav-links">
+        <li><a href="home.html">Início</a></li>
+        <li><a href="catalog.html">Jogos</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="cart.html">Carrinho</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="games-section">
+    <h2>Catálogo de Jogos</h2>
+    <div class="games-grid">
+      <!-- Exemplo de jogo do PlayStation -->
+      <div class="game-card ps">
+        <a href="telaJogos/godOfWarRagnarok.html"> <!-- Torna o quadrado clicável -->
+          <img src="img/ps4.jpg" alt="God of War">
+        </a>
+      </div>
+
+      <!-- Exemplo de jogo do Xbox -->
+      <div class="game-card xbox">
+        <a href="telaJogos/battlefieldv.html">
+          <img src="img/xbox.jpg" alt="Battlefield V">
+        </a>
+      </div>
+
+      <!-- Exemplo de jogo da Nintendo -->
+      <div class="game-card nintendo">
+        <a href="telaJogos/marioKart8.html">
+          <img src="img/nintendo.jpg" alt="Animal Crossing: New Horizons">
+        </a>
+      </div>
+
+      <!-- Adicionando mais jogos do PlayStation -->
+      <div class="game-card ps">
+        <a href="telaJogos/spiderManMiles.html">
+          <img src="img/ps5.jpg" alt="Spider-Man: Miles Morales">
+        </a>
+      </div>
+
+      <div class="game-card ps">
+        <a href="telaJogos/theLastOfUs2.html">
+          <img src="img/The_Last_of_Us_2_capa.png" alt="The Last of Us Part II">
+        </a>
+      </div>
+
+      <!-- Adicionando mais jogos do Xbox -->
+      <div class="game-card xbox">
+        <a href="telaJogos/forzaHorizon5.html">
+          <img src="img/Capturar.PNG" alt="Forza Horizon 5">
+        </a>
+      </div>
+
+      <div class="game-card xbox">
+        <a href="telaJogos/gears5.html">
+          <img src="img/gears.png" alt="Gears 5">
+        </a>
+      </div>
+
+      <!-- Adicionando mais jogos da Nintendo -->
+      <div class="game-card nintendo">
+        <a href="telaJogos/zeldaBreath.html">
+          <img src="img/zelda.png" alt="The Legend of Zelda: Breath of the Wild">
+        </a>
+      </div>
+
+      <div class="game-card nintendo">
+        <a href="telaJogos/superMarioOdyssey.html">
+          <img src="img/mario.jpg" alt="Super Mario Odyssey">
+        </a>
+      </div>
+
+      <!-- Exemplo final de jogo do PlayStation -->
+      <div class="game-card ps">
+        <a href="telaJogos/horizonZeroDown.html">
+          <img src="img/horizonZeroDown.jpg" alt="Horizon Zero Dawn">
+        </a>
+      </div>
+
+    </div>
+  </section>
+</body>
+</html>

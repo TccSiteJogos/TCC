@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Carrinho</title>
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <div class="logo">GameStore</div>
+      <ul class="nav-links">
+        <li><a href="home.html">Início</a></li>
+        <li><a href="catalog.html">Jogos</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="cart.html">Carrinho</a></li>
+      </ul>
+    </nav>
+  </header>
+
+    <div class="cart-container">
+        <h2>Seu Carrinho de Compras</h2>
+        <table class="cart-table">
+          <thead>
+            <tr>
+              <th>Imagem</th>
+              <th>Nome do Jogo</th>
+              <th>Categoria</th>
+              <th>Quantidade</th>
+              <th>Preço Unitário</th>
+              <th>Remover</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td><img src="img/JOGO1.jpg" alt="Jogo 1"></td>
+              <td>Nome do Jogo 1</td>
+              <td>Ação</td>
+              <td>
+                <input type="number" value="1" min="1">
+              </td>
+              <td>R$ 199,99</td>
+              <td><button class="remove-btn">Remover</button></td>
+            </tr>
+            <tr>
+              <td><img src="img/JOGO2.jpg" alt="Jogo 2"></td>
+              <td>Nome do Jogo 2</td>
+              <td>Aventura</td>
+              <td>
+                <input type="number" value="1" min="1">
+              </td>
+              <td>R$ 149,99</td>
+              <td><button class="remove-btn">Remover</button></td>
+            </tr>
+          </tbody>
+        </table>
+      
+        <div class="checkout-section">
+          <h3>Total: R$ 349,98</h3>
+          <button class="checkout-btn">Finalizar Compra</button>
+        </div>
+      </div>
+</body>
+</html>
